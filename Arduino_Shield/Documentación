@@ -1,0 +1,5 @@
+Se utilizó como base la plantilla Arduino Mega Shield que ofrece KiCad. Dicho shield incluye sockets para todos los pines del Arduino Mega; sin embargo, en esta etapa del diseño se conservaron todos los conectores, ya que aún faltan componentes por incorporar a la placa shield.
+
+Hasta el momento, se ha integrado un conector Jack DC para alimentar directamente la shield y, a través de esta, al Arduino Mega mediante el pin VIN. El socket J8 se destinó a las conexiones del display OLED de 1.3”, mientras que el socket J9 corresponde a las conexiones de alimentación y control de la planta. En este último se incluyeron un pin GND, cuatro entradas analógicas (ADC) desde A0 hasta A3, y dos salidas PWM correspondientes al Timer 5, específicamente los pines 44 y 46.
+
+Cabe recalcar que entre el pin 46 y la planta se implementará una etapa de potencia, ya que el sistema está diseñado para el control de un motor de corriente directa (DC).
